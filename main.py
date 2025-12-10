@@ -116,7 +116,7 @@ class EditDialog(QDialog):
         super().__init__()
         self.setWindowTitle("Update Student Data")
         self.setFixedWidth(300)
-        self.setFixedHeight(300)
+        self.setFixedHeight(200)
 
         layout = QVBoxLayout()
         # Get student name from selected row
@@ -212,7 +212,7 @@ class InsertDialog(QDialog):
         super().__init__()
         self.setWindowTitle("Insert Student Data")
         self.setFixedWidth(300)
-        self.setFixedHeight(300)
+        self.setFixedHeight(200)
 
         layout = QVBoxLayout()
 
@@ -258,7 +258,7 @@ class SearchDialog(QDialog):
         # Set window title and size
         self.setWindowTitle("Search Student")
         self.setFixedWidth(300)
-        self.setFixedHeight(300)
+        self.setFixedHeight(100)
 
         # Create layout and input widget
         layout = QVBoxLayout()
