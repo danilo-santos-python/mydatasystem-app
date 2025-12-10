@@ -1,3 +1,4 @@
+from idlelib.help_about import AboutDialog
 from idlelib.search import SearchDialog
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QApplication, QLabel, QWidget, QGridLayout, \
@@ -24,6 +25,7 @@ class MainWindow(QMainWindow):
         about_action = QAction("About", self)
         help_menu_item.addAction(about_action)
         about_action.setMenuRole(QAction.MenuRole.NoRole)
+        about_action.triggered.connect(self.about)
 
         search_action = QAction(QIcon("icons/search.png"), "Search", self)
         edit_menu_item.addAction(search_action)
@@ -91,6 +93,23 @@ class MainWindow(QMainWindow):
     def delete(self):
         dialog = DeleteDialog()
         dialog.exec()
+
+    def about(self):
+        dialog = AboutDialog()
+        dialog.exec()
+
+class AboutDialog(QMessageBox):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("About")
+        info = (
+            "Sistema para Dados\n\n"
+            "Desenvolvido por: Danilo dos Santos Soares\n"
+            "Telefone: (11) 9 4138-3504\n"
+            "Interface: PyQt6\n\n"
+            "© 2025 - Todos os direitos reservados."
+        )
+        self.setText(info)
 
 class EditDialog(QDialog):
     def __init__(self):
