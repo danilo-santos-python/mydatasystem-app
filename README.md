@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/status-em_aperfeiçoamento-yellow)
 ![Interface](https://img.shields.io/badge/UI-PyQt6-9cf)
 
-> **StudentData Manager** é um aplicativo de gerenciamento de estudantes desenvolvido em Python, utilizando **PyQt6** e integrado a um banco de dados **SQLite (.db)**.  
+> **MyDataSystem App** é um aplicativo de gerenciamento de estudantes desenvolvido em Python, utilizando **PyQt6** e integrado a um banco de dados **SQLite (.db)**.  
 > O sistema permite **cadastrar, visualizar, editar e remover** estudantes por meio de uma interface gráfica clara e intuitiva, estruturada com **Programação Orientada a Objetos (OOP)**.
 
 ## 🧠 Sobre o projeto
